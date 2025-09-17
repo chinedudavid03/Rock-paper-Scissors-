@@ -3,6 +3,7 @@
   --secondary-color:#000000;
   --extra: #ffffff;
   --background-color: #add8e6;
+    --icon: #ffffff;
 }
 
 .dark-mode{
@@ -24,10 +25,13 @@ body {
 }
 
 .icon{
-  position: absolute;
-  width: 60px;
+ position: absolute;
+  width: 50px;
   height: 50px;
-  top: 0;
+  background-color: var(--icon);
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  top: 5px;
   right: 0;
   cursor: pointer;
 }
