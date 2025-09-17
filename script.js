@@ -33,8 +33,8 @@ let outcomes = {
 //just added an event listener for the weapon-box
 for (let i = 0; i < weapons.length; i++) {
   weapons[i].addEventListener("click", (e) => {
-    player.src = `Images/Rock.png`;
-    computer.src = `Images/Rock.png`;
+    player.src = `Images/rock.png`;
+    computer.src = `Images/rock.png`;
 
     //hide the weapon box and show the choice
     box.style.display = "none";
