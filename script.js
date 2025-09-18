@@ -12,8 +12,8 @@ let wonValue = document.querySelector(".score-grade .won h3 span");
 let lostValue = document.querySelector(".score-grade .lost h3 span");
 let drawValue = document.querySelector(".score-grade .draw h3 span");
 
-let won = 0,
-let lost = 0,
+let won = 0;
+let lost = 0;
 let draw = 0;
 
 let computerChoice = ["rock", "paper", "scissors"];
