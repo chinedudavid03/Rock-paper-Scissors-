@@ -22,7 +22,7 @@ let outcomes = {
   rockrock: "Draw",
   rockpaper: "Computer",
   rockscissors: "You",
-  paperpock: "You",
+  paperrock: "You",
   paperpaper: "Draw",
   paperscissors: "Computer",
   scissorspaper: "You",
