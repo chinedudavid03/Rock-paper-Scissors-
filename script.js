@@ -13,8 +13,8 @@ let lostValue = document.querySelector(".score-grade .lost h3 span");
 let drawValue = document.querySelector(".score-grade .draw h3 span");
 
 let won = 0,
-  lost = 0,
-  draw = 0;
+let lost = 0,
+let draw = 0;
 
 let computerChoice = ["rock", "paper", "scissors"];
 
@@ -76,7 +76,7 @@ let showResult = (result) => {
     lost++;
     lostValue.innerHTML = lost;
   } else {
-    resultMessage.innerHTML = "Draw";
+    resultMessage.innerHTML = draw;
     draw++;
     drawValue.innerHTML = draw;
   }
