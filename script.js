@@ -13,21 +13,21 @@ let lostValue = document.querySelector(".score-grade .lost h3 span");
 let drawValue = document.querySelector(".score-grade .draw h3 span");
 
 let won = 0,
- lost = 0,
- draw = 0,
+  lost = 0,
+  draw = 0;
 
-let computerChoice = ["rock", "paper", "scissors"];
+let computerChoice = ["Rock", "Paper", "Scissors"];
 
 let outcomes = {
-  rockrock: "Draw",
-  rockpaper: "Computer",
-  rockscissors: "You",
-  paperrock: "You",
-  paperpaper: "Draw",
-  paperscissors: "Computer",
-  scissorspaper: "You",
-  scissorsrock: "Computer",
-  scissorsscissors: "Draw",
+  RockRock: "Draw",
+  RockPaper: "Computer",
+  RockScissors: "You",
+  PaperRock: "You",
+  PaperPaper: "Draw",
+  PaperScissors: "Computer",
+  ScissorsPaper: "You",
+  ScissorsRock: "Computer",
+  ScissorsScissors: "Draw",
 };
 
 //just added an event listener for the weapon-box
@@ -76,7 +76,7 @@ let showResult = (result) => {
     lost++;
     lostValue.innerHTML = lost;
   } else {
-    resultMessage.innerHTML = draw;
+    resultMessage.innerHTML = "Draw";
     draw++;
     drawValue.innerHTML = draw;
   }
