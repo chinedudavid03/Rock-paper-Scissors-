@@ -16,18 +16,18 @@ let won = 0,
   lost = 0,
   draw = 0;
 
-let computerChoice = ["Rock", "Paper", "Scissors"];
+let computerChoice = ["rock", "paper", "scissors"];
 
 let outcomes = {
-  RockRock: "Draw",
-  RockPaper: "Computer",
-  RockScissors: "You",
-  PaperRock: "You",
-  PaperPaper: "Draw",
-  PaperScissors: "Computer",
-  ScissorsPaper: "You",
-  ScissorsRock: "Computer",
-  ScissorsScissors: "Draw",
+  rockrock: "Draw",
+  rockpaper: "Computer",
+  rockscissors: "You",
+  paperpock: "You",
+  paperpaper: "Draw",
+  paperscissors: "Computer",
+  scissorspaper: "You",
+  scissorsrock: "Computer",
+  scissorsscissors: "Draw",
 };
 
 //just added an event listener for the weapon-box
@@ -54,7 +54,7 @@ for (let i = 0; i < weapons.length; i++) {
 
       let randomChoice =
         computerChoice[Math.floor(Math.random() * computerChoice.length)];
-      computer.src = `Images/${randomChoice}.png`;
+      computer.src = Images/${randomChoice}.png;
 
       let userChoice = e.target.parentElement.className;
       let outcomeValue = outcomes[userChoice + randomChoice];
